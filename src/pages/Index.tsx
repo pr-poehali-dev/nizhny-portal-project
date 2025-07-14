@@ -120,13 +120,13 @@ const Index = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-100">
       {/* Header */}
       <header className="bg-white shadow-sm border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-3">
-              <Icon name="MapPin" size={32} className="text-blue-600" />
+              <Icon name="MapPin" size={32} className="text-green-600" />
               <h1 className="text-2xl font-bold text-gray-900">НН Справочник</h1>
             </div>
             <nav className="hidden md:flex space-x-6">
@@ -169,7 +169,7 @@ const Index = () => {
                   onChange={(e) => setSearchQuery(e.target.value)}
                   className="pl-10 pr-4 py-3 text-lg border-2 border-gray-200 focus:border-blue-500 rounded-lg shadow-sm"
                 />
-                <Button size="lg" className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-600 hover:bg-blue-700">
+                <Button size="lg" className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-green-600 hover:bg-green-700">
                   Найти
                 </Button>
               </div>
@@ -189,8 +189,8 @@ const Index = () => {
                 variant={selectedCategory === category.id ? "default" : "outline"}
                 className={`flex flex-col items-center p-4 h-auto space-y-2 ${
                   selectedCategory === category.id 
-                    ? 'bg-blue-600 text-white hover:bg-blue-700' 
-                    : 'hover:bg-blue-50 hover:text-blue-600'
+                    ? 'bg-green-600 text-white hover:bg-green-700' 
+                    : 'hover:bg-green-50 hover:text-green-600'
                 }`}
                 onClick={() => setSelectedCategory(category.id)}
               >
@@ -238,7 +238,7 @@ const Index = () => {
                 </div>
                 
                 <CardHeader className="pb-3">
-                  <CardTitle className="text-lg group-hover:text-blue-600 transition-colors">
+                  <CardTitle className="text-lg group-hover:text-green-600 transition-colors">
                     {org.name}
                   </CardTitle>
                   <CardDescription className="text-gray-600">
@@ -295,7 +295,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Icon name="MapPin" size={24} className="text-blue-400" />
+                <Icon name="MapPin" size={24} className="text-green-400" />
                 <span className="text-xl font-bold">НН Справочник</span>
               </div>
               <p className="text-gray-400">
